@@ -4,23 +4,93 @@ const OngoingProjects = () => {
   const projects = [
     {
       title: "Chakma Language Dataset: A Step Towards Linguistic and Cultural Empowerment",
-      details:
-        "The Chakma language dataset project focuses on creating a comprehensive and high-quality dataset to preserve and promote the Chakma language, which is underrepresented in digital and linguistic studies. The project combines linguistic expertise and computational techniques to enable future applications like natural language processing (NLP), machine translation, and cultural preservation.",
+      details: (
+        <>
+          The Chakma Language Dataset project is dedicated to the preservation and promotion of the Chakma language, a rich and vibrant language that is currently underrepresented in digital and linguistic research.
+          <br /><br />
+          <strong>Key Initiatives:</strong>
+          <br />
+          - Comprehensive Data Collection: Gathering a diverse range of textual data, including literature, oral histories, and contemporary writings.
+          <br />
+          - Linguistic Expertise: Collaborating with native speakers and linguists to ensure the accuracy and relevance of the dataset.
+          <br />
+          - Computational Techniques: Utilizing advanced machine learning algorithms to process and structure the data for various applications.
+          <br /><br />
+          <strong>Future Applications:</strong>
+          <br />
+          - Natural Language Processing (NLP): Enabling the development of language models that understand and generate Chakma text.
+          <br />
+          - Machine Translation: Facilitating translation between Chakma and other languages to bridge communication gaps.
+          <br />
+          - Cultural Preservation: Documenting and safeguarding the linguistic heritage for future generations.
+        </>
+      ),
     },
     {
       title: "Bangla Sign Language Processing",
-      details:
-        "Developing tools and technologies to facilitate the understanding and use of Bangla sign language.",
+      details: (
+        <>
+          The Bangla Sign Language Processing project aims to bridge the communication gap between the Deaf community and the wider population by developing innovative tools and technologies.
+          <br /><br />
+          <strong>Key Objectives:</strong>
+          <br />
+          - Gesture Recognition: Implementing computer vision techniques to accurately interpret Bangla sign language gestures.
+          <br />
+          - Real-Time Translation: Creating systems that can translate sign language into spoken or written Bangla in real-time.
+          <br />
+          - User-Friendly Interfaces: Designing applications that are intuitive and accessible for users of all ages and technical proficiencies.
+          <br /><br />
+          <strong>Impact:</strong>
+          <br />
+          - Enhanced Communication: Facilitating smoother interactions between Deaf individuals and those who do not understand sign language.
+          <br />
+          - Educational Tools: Providing resources for learning and teaching Bangla sign language in schools and communities.
+        </>
+      ),
     },
     {
       title: "Knowledge Graph",
-      details:
-        "Building a comprehensive knowledge graph to represent Bangla language data relationships effectively.",
+      details: (
+        <>
+          The Knowledge Graph project is focused on constructing a robust and interconnected representation of Bangla language data. This graph-based structure captures the intricate relationships between various linguistic elements, enabling advanced data analysis and retrieval.
+          <br /><br />
+          <strong>Project Components:</strong>
+          <br />
+          - Data Integration: Aggregating data from diverse sources such as dictionaries, encyclopedias, and online content to build a comprehensive dataset.
+          <br />
+          - Semantic Relationships: Defining and modeling the relationships between words, phrases, and concepts to reflect their real-world associations.
+          <br />
+          - Scalability: Ensuring the knowledge graph can handle large volumes of data and accommodate future expansions.
+          <br /><br />
+          <strong>Applications:</strong>
+          <br />
+          - Enhanced Search Engines: Improving the accuracy and relevance of search results for Bangla queries.
+          <br />
+          - AI and Machine Learning: Providing a foundational dataset for training intelligent systems that understand Bangla context and semantics.
+        </>
+      ),
     },
     {
       title: "Parts of Speech Tagging",
-      details:
-        "Creating accurate and scalable parts-of-speech tagging for Bangla text to enhance NLP applications.",
+      details: (
+        <>
+          The Parts of Speech (POS) Tagging project is dedicated to developing accurate and scalable tagging systems for Bangla text. By identifying and categorizing the grammatical components of sentences, this project enhances various Natural Language Processing (NLP) applications.
+          <br /><br />
+          <strong>Project Goals:</strong>
+          <br />
+          - Accuracy: Achieving high precision in identifying nouns, verbs, adjectives, and other parts of speech within Bangla sentences.
+          <br />
+          - Scalability: Designing algorithms that can efficiently process large datasets without compromising performance.
+          <br />
+          - Adaptability: Ensuring the tagging system can handle diverse text genres, including formal literature, colloquial speech, and digital communications.
+          <br /><br />
+          <strong>Benefits:</strong>
+          <br />
+          - Improved NLP Applications: Enhancing tools like grammar checkers, text analyzers, and language translators by providing detailed grammatical insights.
+          <br />
+          - Linguistic Research: Offering valuable data for scholars studying Bangla syntax and grammar patterns.
+        </>
+      ),
     },
   ];
 
@@ -47,9 +117,9 @@ const OngoingProjects = () => {
               <h2 className="text-xl sm:text-2xl font-semibold text-indigo-700 mb-3">
                 {project.title}
               </h2>
-              <p className="text-gray-600 flex-grow">
+              <div className="text-gray-600 flex-grow">
                 {project.details}
-              </p>
+              </div>
               {/* Optional: Add a Learn More button or link */}
               {/* 
               <a
