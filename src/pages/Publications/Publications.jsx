@@ -25,18 +25,16 @@ const Publications = () => {
 	];
 
 	return (
-		<div className="my-10 mx-[10%] h-screen w-4/5">
-			<h1 className="text-3xl font-semibold pb-8 ml-[7%]">
+		<section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
+			<h1 className="text-3xl sm:text-4xl font-semibold pb-8 text-center">
 				Publications
 			</h1>
-			<div className="mx-20">
+			<div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
 				{publications.map((publicationInfo) => (
-					<div key={publicationInfo.id} className="mb-4">
-						<PublicationDetail publicationInfo={publicationInfo} />
-					</div>
+					<PublicationDetail key={publicationInfo.id} publicationInfo={publicationInfo} />
 				))}
 			</div>
-		</div>
+		</section>
 	);
 };
 
