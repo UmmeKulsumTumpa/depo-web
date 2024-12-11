@@ -144,7 +144,7 @@ const Team = () => {
 	return (
 		<div>
 			<h1 className="text-3xl font-bold py-2 text-center my-8">Our Team</h1>
-			<div className="grid grid-cols-3 mx-28 gap-14 mb-10">
+			<div className="grid grid-cols-3 mx-28 gap-10 mb-10">
 				{teamInfo.map((individualDetail) => (
 					<div key={individualDetail.name}>
 						<Detail user={individualDetail} />
