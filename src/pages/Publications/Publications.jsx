@@ -25,20 +25,13 @@ const Publications = () => {
 	];
 
 	return (
-		<div className="mx-10 my-10" style={{
-			height: '100vh',
-			width: '80%',
-			marginLeft: '10%',
-		  marginRight: '10%',
-		}}>
-			<h1 className="text-3xl font-semibold pb-8" 
-				style={{
-					marginLeft: '7%',
-				}}
-			>Publications</h1>
+		<div className="my-10 mx-[10%] h-screen w-4/5">
+			<h1 className="text-3xl font-semibold pb-8 ml-[7%]">
+				Publications
+			</h1>
 			<div className="mx-20">
 				{publications.map((publicationInfo) => (
-					<div key={publicationInfo.id} className="mb-4" >
+					<div key={publicationInfo.id} className="mb-4">
 						<PublicationDetail publicationInfo={publicationInfo} />
 					</div>
 				))}

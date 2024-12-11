@@ -8,27 +8,27 @@ const PublicationDetail = ({ publicationInfo }) => {
 			<h2 className="text-xl font-bold mb-1">{title}</h2>
 			<p className="text-gray-500 mb-2">{authors}</p>
 			<p>{publishedIn}</p>
-			<div className="mt-5 text-">
-				<div className="flex gap-2">
-					<h4>Publication PDF: </h4>
+			<div className="mt-5">
+				<div className="flex items-center gap-2">
+					<h4 className="font-medium">Publication PDF:</h4>
 					<a
-						href="https://example.com"
-						className="text-blue-500"
+						href={pdf}
+						className="text-blue-500 hover:underline"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{pdf}
+						View PDF
 					</a>
 				</div>
-				<div className="flex gap-2">
-					<h4>Related Codebase: </h4>
+				<div className="flex items-center gap-2 mt-2">
+					<h4 className="font-medium">Related Codebase:</h4>
 					<a
-						href="https://example.com"
-						className="text-blue-500"
+						href={code}
+						className="text-blue-500 hover:underline"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{code}
+						View Code
 					</a>
 				</div>
 			</div>
